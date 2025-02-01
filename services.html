@@ -9,7 +9,7 @@
     <title>Left Field Solutions</title>
     <style>
       .section-title {
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: bold;
         margin-bottom: 10px;
         text-align: left;
@@ -57,6 +57,13 @@
         background: rgba(0, 0, 0, 0.04); /* Slight darker overlay */
       }
       @media (min-width: 768px) {
+        .section-title {
+          font-size: 1.5em;
+          font-weight: bold;
+          margin-bottom: 10px;
+          text-align: left;
+          color: #333;
+        }
         /*Medium screens and up, 2 per row*/
         .card {
           flex-basis: calc(50% - 20px); /* Adjust spacing for two per row */
@@ -116,8 +123,8 @@
         <h1>Services</h1>
 
         <section class="section" id="development">
-          <div class="flex align-items-center justify-content-between">
-            <div class="flex gap-1 align-items-center">
+          <div class="flex align-items-end justify-content-between">
+            <div class="flex gap-1 align-items-end">
               <img alt="code" src="/assets/code_50x50.png" />
               <h2 class="section-title">Development</h2>
             </div>
@@ -176,8 +183,8 @@
         </section>
 
         <section id="architecture" class="section">
-          <div class="flex align-items-center justify-content-between">
-            <div class="flex gap-2 align-items-center">
+          <div class="flex align-items-end justify-content-between">
+            <div class="flex gap-1 align-items-end">
               <img alt="code" src="/assets/architecture_50x50.png" />
               <h2 class="section-title">Architecture</h2>
             </div>
@@ -235,8 +242,8 @@
         </section>
 
         <section id="support" class="section">
-          <div class="flex align-items-center justify-content-between">
-            <div class="flex gap-2 align-items-center">
+          <div class="flex align-items-end justify-content-between">
+            <div class="flex gap-1 align-items-end">
               <img alt="code" src="/assets/support_50x50.png" />
               <h2 class="section-title">365 Support | Helpdesk</h2>
             </div>
