@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Left Field Solutions</title>
+    <style>
+      .coming-soon {
+        font-size: 2em;
+        font-weight: bold;
+        color: #e74c3c; /* Red color for coming soon */
+        margin-top: 30px;
+        letter-spacing: 2px;
+      }
+      .product__image {
+        width: auto;
+        height: 200px;
+      }
+
+      @media (min-width: 768px) {
+        /*Medium screens and up, 2 per row*/
+        .product__image {
+          width: auto;
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="flex align-items-end justify-content-between w-full container">
+        <div class="logo">
+          <img src="/assets/logo.png" alt="Left Field Solutions Logo" />
+        </div>
+        <nav class="nav-menu">
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/services.html">SERVICES</a></li>
+            <li><a class="active" href="/products.html">PRODUCTS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-container">
+      <div class="container">
+        <h1>Products</h1>
+        <div class="container-message">
+          <img class="product__image" src="assets/crates.png" alt="Coming Soon" class="coming-soon-image" />
+          <h1>Our products are currently being Unpackaged...</h1>
+          <p class="message">Don't worry, they'll be here soon! <br />We're just putting the final touches on them.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="flex justify-content-end align-items-center gap-3">
+          <div class="contact-info">
+            <p>CONTACT INFO</p>
+            <div class="flex align-items-center justify-content-end gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#e67e22"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:information@leftfield-solutions.com">information@leftfield-solutions.com</a>
+            </div>
+          </div>
+          <div>
+            <img src="/assets/LF.png" alt="left field solutions" style="height: 65px" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

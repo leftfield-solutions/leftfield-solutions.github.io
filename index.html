@@ -1,79 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Left Field Solutions - Coming Soon">
-    <title>Left Field Solutions - Coming Soon</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="leftfield.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Left Field Solutions</title>
+
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0078D7, #005A9E);
-            color: white;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+      .hero {
+        position: relative;
+        text-align: center;
+        color: white;
+        height: 70vh;
+        max-height: 600px;
+        min-height: 350px;
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/hero.png');
+        background-size: cover;
+        background-position: center;
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
+        z-index: -1;
+      }
 
-        p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
-        }
+      .hero-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+        text-align: left;
+      }
 
-        .email-input {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
+      .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        line-height: 1.3em;
+      }
 
-        input[type="email"] {
-            padding: 10px;
-            font-size: 1rem;
-            border: none;
-            border-radius: 5px;
-            width: 300px;
-        }
+      .services {
+        background-color: rgb(23, 81, 88, 27%);
+      }
 
-        button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: white;
-            background-color: #005A9E;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+      .services,
+      .products {
+        padding: 25px;
 
-        button:hover {
-            background-color: #003C6D;
-        }
+        text-align: center;
+        scroll-margin-top: 79px;
+      }
+      .services h2,
+      .products h2 {
+        margin-bottom: 15px;
+        font-size: 2em;
+      }
+      .services-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .service-item {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        box-sizing: border-box;
+        margin: 15px;
+      }
+      .service-item img {
+        height: 80px;
+        margin-bottom: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-        footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.9rem;
+      .left-align {
+        text-align: left;
+      }
+
+      .coming-soon-section {
+        text-align: center;
+        padding: 40px 0;
+        background-color: #f0f0f0; /* Light gray background */
+      }
+
+      .coming-soon-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .coming-soon-icon {
+        margin-bottom: 15px;
+      }
+
+      .coming-soon-title {
+        color: #333;
+        font-size: 2em;
+        margin-bottom: 15px;
+      }
+
+      .coming-soon-text {
+        color: #555;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .product__image {
+        width: auto;
+        height: 200px;
+      }
+
+      @media (min-width: 768px) {
+        /*Medium screens and up, 2 per row*/
+        .product__image {
+          width: auto;
+          height: 300px;
         }
+      }
     </style>
-</head>
-<body>
-    <h1>Left Field Solutions</h1>
-    <p>We're working on something amazing! Stay tuned.</p>
+  </head>
+  <body>
+    <main class="page-container">
+      <header>
+        <div class="flex align-items-end justify-content-between w-full container">
+          <div class="logo">
+            <img src="/assets/logo.png" alt="Left Field Solutions Logo" />
+          </div>
+          <nav class="nav-menu">
+            <div class="hamburger-menu" id="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="/index.html" class="active">HOME</a></li>
+              <li><a href="/services.html">SERVICES</a></li>
+              <li><a href="/products.html">PRODUCTS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
+      <section class="hero">
+        <div class="hero-content container fill-contact">
+          <h1>Unlock Your Business Potential<br />With SharePoint & Power Platform</h1>
+          <div
+            data-fillout-id="1hkCRohkVLus"
+            data-fillout-embed-type="popup"
+            data-fillout-button-text="Contact Us"
+            data-fillout-dynamic-resize
+            data-fillout-button-size="large"
+            data-fillout-inherit-parameters
+            data-fillout-popup-size="medium"
+          ></div>
+          <script src="https://server.fillout.com/embed/v1/" type="text/javascript"></script>
+        </div>
+      </section>
+
+      <section class="services" id="services-section">
+        <div class="container">
+          <h2 class="left-align">Services</h2>
+          <div class="services-list">
+            <div class="service-item">
+              <img src="/assets/code_100x100.png" alt="Development" />
+              <h3>Development</h3>
+              <p class="left-align">
+                Looking to optimize your Microsoft 365 environment? We specialize in crafting custom solutions that improve productivity and enhance user
+                experience. Our expertise includes building robust SharePoint Framework components, intuitive Canvas and Model-Driven Power Apps, and seamless
+                Power Automate integrations. Let us help you streamline your processes, manage data effectively, and empower your organization to thrive.
+              </p>
+              <div class="mt-2">
+                <a href="/services.html#development" class="btn btn-primary">More</a>
+              </div>
+            </div>
+            <div class="service-item">
+              <img src="/assets/archecture_100x100.png" alt="Architecture" />
+              <h3>Architecture</h3>
+              <p class="left-align">
+                Enhance your digital capabilities and streamline your operations with our specialized Microsoft 365 services. We provide tailored solutions that
+                empower your organization to harness the power of data, enhance communication, and foster collaboration. From building robust data foundations
+                to creating engaging digital workplaces, we work with you to implement solutions that drive efficiency, productivity, and growth.
+              </p>
+              <div class="mt-2">
+                <a href="/services.html#architecture" class="btn btn-primary">More</a>
+              </div>
+            </div>
+            <div class="service-item">
+              <img src="/assets/support_100x100.png" alt="365 Support | Helpdesk" />
+              <h3>365 Support | Helpdesk</h3>
+              <p class="left-align">
+                Ensure the smooth operation of your Microsoft 365 environment with our dedicated support and helpdesk services. We provide timely, expert
+                assistance to your users, resolving issues quickly and efficiently. From everyday questions to complex technical challenges, our team is here to
+                keep your organization productive and your 365 experience seamless. We cover everything from user guidance to complex configuration.
+              </p>
+              <div class="mt-2">
+                <a href="/services.html#support" class="btn btn-primary">More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <h2 class="left-align">Featured Products</h2>
+          <div class="container-message">
+            <img class="product__image" src="assets/crates.png" alt="Coming Soon" class="coming-soon-image" />
+            <h1>Our products are currently being Unpackaged...</h1>
+            <p class="message">Don't worry, they'll be here soon! <br />We're just putting the final touches on them.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-        &copy; 2025 Left Field Solutions. All rights reserved.
+      <div class="container">
+        <div class="flex justify-content-end align-items-center gap-3">
+          <div class="contact-info">
+            <p>CONTACT INFO</p>
+            <div class="flex align-items-center justify-content-end gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#e67e22"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+
+              <a href="mailto:information@leftfield-solutions.com">information@leftfield-solutions.com</a>
+            </div>
+          </div>
+          <div>
+            <img src="/assets/LF.png" alt="left field solutions" style="height: 65px" />
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
