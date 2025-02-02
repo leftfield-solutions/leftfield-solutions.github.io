@@ -152,6 +152,10 @@ footer .contact-info {
 
 /* Mobile Responsive */
 @media (max-width: 668px) {
+  .container {
+    margin: 0 auto;
+    padding: 0px;
+  }
   .nav-menu .nav-links {
     display: none;
     flex-direction: column;

@@ -32,8 +32,7 @@
       }
 
       .hero-content {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding: 65px 19px;
         position: relative;
         text-align: left;
       }
@@ -65,14 +64,15 @@
         justify-content: space-around;
         flex-wrap: wrap;
       }
+
       .service-item {
         background-color: white;
         padding: 20px;
         text-align: center;
         border-radius: 10px;
-        width: 300px;
+        width: 95%;
         box-sizing: border-box;
-        margin: 15px;
+        margin: 15px 1px;
       }
       .service-item img {
         height: 80px;
@@ -80,6 +80,10 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+      }
+
+      .product__image {
+        height: 132px;
       }
 
       .left-align {
@@ -115,16 +119,25 @@
         max-width: 600px;
         margin: 0 auto;
       }
-      .product__image {
-        width: auto;
-        height: 132px;
-      }
 
       @media (min-width: 768px) {
         /*Medium screens and up, 2 per row*/
+
+        .hero-content {
+          padding: 100px 10px;
+        }
+
         .product__image {
-          width: auto;
           height: 300px;
+        }
+        .service-item {
+          background-color: white;
+          padding: 20px;
+          text-align: center;
+          border-radius: 10px;
+          width: 300px;
+          box-sizing: border-box;
+          margin: 15px;
         }
       }
     </style>
@@ -132,7 +145,7 @@
   <body>
     <main class="page-container">
       <header>
-        <div class="flex align-items-end justify-content-between w-full container">
+        <div class="flex align-items-center justify-content-between w-full container">
           <div class="logo">
             <img src="/assets/logo.png" alt="Left Field Solutions Logo" />
           </div>
