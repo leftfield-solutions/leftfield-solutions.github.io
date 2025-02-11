@@ -19,6 +19,39 @@
         width: auto;
         height: 132px;
       }
+      .product {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: #f0f8ff; /* Light AliceBlue */
+        border: 2px solid #add8e6; /* LightBlue */
+      }
+
+      .product h2 {
+        margin-top: 0;
+      }
+
+      .product p {
+        margin-bottom: 10px;
+      }
+
+      .npm-link {
+        color: #e67e22; /* Reddish for NPM */
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .npm-link:hover {
+        text-decoration: underline;
+      }
+
+      .more-to-come {
+        text-align: center;
+        font-style: italic;
+        color: #888;
+        margin-top: 30px;
+      }
 
       @media (min-width: 768px) {
         /*Medium screens and up, 2 per row*/
@@ -52,11 +85,28 @@
     <main class="page-container">
       <div class="container px-3">
         <h1 class="px-3">Products</h1>
-        <div class="container-message">
+        <div class="card">
+          <h2>@leftfield-solutions/spfx-cli</h2>
+          <p>
+            A command-line interface (CLI) designed to streamline and enhance your SharePoint Framework (SPFx) development workflow. This tool provides a range
+            of commands to simplify common tasks, automate processes, and improve overall productivity when building SharePoint solutions.
+          </p>
+          <p><strong>Completely Free to Use!</strong> This tool is offered at no cost to the community.</p>
+          <p>Install via npm: <code>npm install -g @leftfield-solutions/spfx-cli</code></p>
+          <a class="npm-link" href="https://www.npmjs.com/package/@leftfield-solutions/spfx-cli" target="_blank" rel="noopener">View on npmjs.com</a>
+
+          <!-- Replace # with link to detailed page -->
+        </div>
+        <p >
+          <h1>More awesome products are brewing in the lab!</h1>
+          We're working hard to bring you more tools and solutions that will (hopefully) make your life easier.
+          Stay tuned... or, you know, check back whenever you feel like it. No pressure. 😉
+        </p>
+        <!-- <div class="container-message">
           <img class="product__image" src="assets/crates.png" alt="Coming Soon" class="coming-soon-image" />
           <h1>Our products are currently being Unpackaged...</h1>
           <p class="message">Don't worry, they'll be here soon! <br />We're just putting the final touches on them.</p>
-        </div>
+        </div> -->
       </div>
     </main>
     <footer>
