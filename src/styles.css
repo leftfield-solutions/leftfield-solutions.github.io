@@ -1,0 +1,91 @@
+/* src/index.css */
+
+@import 'tailwindcss';
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0px 0px 1rem 0px;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #f19224;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+blockquote:before {
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+body {
+  @apply m-0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up at least the full viewport height */
+}
+
+/* This ensures that the content takes up the remaining space, pushing the footer down */
+.App > div:nth-child(2) {
+  /*Select the container*/
+  flex: 1;
+}
+
+footer {
+  /* Stick the footer to the bottom if content isn't long enough to push it there */
+  margin-top: auto; /* Add margin to push the footer to the bottom. */
+}
+
+.codeContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 20px 10px;
+  background-color: #486c71;
+  color: #fdfdfd;
+  font-weight: 600;
+}
+
+.MuiToolbar-root {
+  padding: 0 !important;
+}
