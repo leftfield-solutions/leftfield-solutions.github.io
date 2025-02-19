@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { TanStackRouterVite } from '@tanstack/router-plugin/vite';
 import path from 'path';
 
+//{ autoCodeSplitting: true } do not use this option, it will break the router in github pages
 export default defineConfig({
   plugins: [TanStackRouterVite(), viteReact(), tailwindcss()],
   base: '/',

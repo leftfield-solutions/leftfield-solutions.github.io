@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from '@tanstack/react-router';
 
-export const useScrollToAnchor = (offset = 100) => {
+export const useScroll = (offset = 100) => {
   const location = useLocation();
 
   useEffect(() => {
@@ -17,27 +17,13 @@ export const useScrollToAnchor = (offset = 100) => {
             top: offsetPosition,
             behavior: 'smooth'
           });
-
-          // // Remove the hash and trailing slash from the URL
-          // let pathname = location.pathname;
-
-          // // Remove trailing slash if it exists
-          // if (pathname.endsWith('/')) {
-          //   pathname = pathname.slice(0, -1);
-          // }
-
-          // navigate(
-          //   {
-          //     ...location,
-          //     pathname: pathname, // Use the modified pathname
-          //     hash: ''
-          //   },
-          //   { replace: true }
-          // );
-
-          // lastHash.current = '';
         }, 100);
       }
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
   }, [location, offset]);
 

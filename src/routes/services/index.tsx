@@ -1,6 +1,6 @@
 import { ContactUs } from '@/components/contact-us';
 import { ServiceData } from '@/data';
-import { useScrollToAnchor } from '@/hooks/anchor.hook';
+import { useScroll } from '@/hooks/scroll.hook';
 import { Box, Card, CardContent, Container, Typography } from '@mui/material';
 import { createFileRoute } from '@tanstack/react-router';
 
@@ -37,7 +37,7 @@ const ServiceCard = ({ title, description }: { title: string; description: strin
 };
 
 function RouteComponent() {
-  useScrollToAnchor();
+  useScroll();
   return (
     <Container maxWidth="lg" sx={{ py: 2 }}>
       <div className="flex justify-between items-center">
