@@ -2,7 +2,7 @@
   "name": "leftfield",
   "private": true,
   "type": "module",
-  "homepage": "https://github.com/leftfield-solutions/leftfield-solutions.github.io/",
+  "homepage": "https://github.com/leftfield-solutions/leftfield-solutions.github.io",
   "scripts": {
     "generate-routes": "tsr generate",
     "watch-routes": "tsr watch",
