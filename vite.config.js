@@ -6,7 +6,7 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [TanStackRouterVite({ autoCodeSplitting: true }), viteReact(), tailwindcss()],
-  base: '/leftfield-solutions.com',
+  base: '/',
   test: {
     globals: true,
     environment: 'jsdom'
