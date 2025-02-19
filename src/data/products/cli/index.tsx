@@ -14,10 +14,8 @@ export const CLI = () => {
     const fetchReadme = async () => {
       try {
         const text = readme;
-        console.log(text);
         let trimmedMarkdown = text.split('## Disclaimer')[0];
         trimmedMarkdown = trimmedMarkdown.split('# Commands')[1];
-        console.log(text);
         setMarkdown(trimmedMarkdown);
       } catch (e: any) {
         console.error('Failed to fetch README.md:', e);
