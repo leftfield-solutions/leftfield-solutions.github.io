@@ -6,11 +6,12 @@
   "scripts": {
     "generate-routes": "tsr generate",
     "watch-routes": "tsr watch",
+    "copy-cname": "cp CNAME dist/CNAME",
     "start": "vite --port 3000",
     "build": "vite build && tsc",
     "serve": "vite preview",
     "test": "vitest run",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && npm run copy-cname",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
